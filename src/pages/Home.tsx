@@ -9,7 +9,7 @@ Swiper.use([Autoplay, Pagination]);
 const Home = () => {
   useEffect(() => {
     // Initialize Swiper
-    const swiper = new Swiper('.pagedone', {
+    new Swiper('.pagedone', {
       slidesPerView: 1,
       spaceBetween: 32,
       loop: true,
