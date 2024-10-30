@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React + TS</title>
+  <link href="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/css/pagedone.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+    var swiper = new Swiper(".pagedone", {
+      slidesPerView: 1,
+      spaceBetween: 32,
+      loop: true,
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        767: {
+          slidesPerView: 2,
+          spaceBetween: 32,
+        },
+
+        1124: {
+          slidesPerView: 3,
+          spaceBetween: 32,
+        },
+      },
+    });
+  </script>
+  <script type="module" src="/src/main.tsx"></script>
+
+</body>
+
+</html>
