@@ -79,7 +79,7 @@ const Layout = () => {
               <div className="flex lg:items-center w-full justify-start flex-col lg:flex-row gap-4 lg:w-max max-lg:gap-4 lg:ml-14 lg:justify-end">
                 <a
                   href="/accounts/login/"
-                  className="cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 py-3 px-6 text-sm hover:bg-indigo-100"
+                  className="cursor-pointer rounded-full font-semibold text-center shadow-xs transition-all duration-500 py-3 px-6 text-sm hover:bg-indigo-100"
                 >
                   Login
                 </a>
