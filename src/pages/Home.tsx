@@ -59,8 +59,8 @@ const Home = () => {
               with monitoring, and team collaboration tools.
             </p>
 
-            <div className="rounded-full bg-[#3B49CF] w-[250px] md:mt-12 mt-4 shadow-md flex justify-center items-center p-2 py-4 text-white">
-              <button type="button" className="border-none h-full w-full outline-none" onClick={() => navigate('/accounts/signup')}>
+            <div className="rounded-full bg-[#3B49CF] w-[250px] md:mt-12 mt-4 shadow-md flex justify-center items-center p-2 py-4 text-white" onClick={() => navigate('/accounts/signup')}>
+              <button type="button" className="border-none h-full w-full outline-none">
                 Create an account
               </button>
             </div>
