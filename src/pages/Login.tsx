@@ -14,7 +14,7 @@ const LoginPage = () => {
       <div className="h-4/5 w-4/5 bg-white shadow-md relative overflow-hidden rounded-lg">
         <div
           id="signin"
-          className={`bg-white absolute top-0 left-0 h-full w-1/2 flex justify-center items-center transition-all duration-700 ease-in-out z-20 ${
+          className={`bg-white absolute top-0 left-0 h-full md:w-1/2 w-full flex justify-center items-center transition-all duration-700 ease-in-out z-20 ${
             isAnimated ? "translate-x-full opacity-0" : ""
           }`}
         >
@@ -36,7 +36,7 @@ const LoginPage = () => {
 
         <div
           id="overlay-container"
-          className={`absolute top-0 left-1/2 w-1/2 h-full overflow-hidden transition-transform duration-700 ease-in-out z-100 ${
+          className={`absolute md:block hidden top-0 left-1/2 w-1/2 h-full overflow-hidden transition-transform duration-700 ease-in-out z-100 ${
             isAnimated ? "-translate-x-full" : ""
           }`}
         >
