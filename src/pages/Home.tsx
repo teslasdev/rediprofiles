@@ -9,7 +9,7 @@ import instagram from "../assets/instagram.svg";
 import youtube from "../assets/youtube.svg";
 import messenger from "../assets/messenger.svg";
 import facebook from "../assets/facebook.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 Swiper.use([Autoplay, Pagination]);
 
@@ -43,6 +43,8 @@ const Home = () => {
     // Ensure jQuery or any other DOM-dependent code works as expected
     $(".pagedone").css("display", "block");
   }, []);
+
+  const navigate = useNavigate()
   return (
     <>
       {/* Banner */}.
@@ -58,7 +60,7 @@ const Home = () => {
             </p>
 
             <div className="rounded-full bg-[#3B49CF] w-[250px] md:mt-12 mt-4 shadow-md flex justify-center items-center p-2 py-4 text-white">
-              <button type="button" className="border-none outline-none">
+              <button type="button" className="border-none h-full w-full outline-none" onClick={() => navigate('/accounts/signup')}>
                 Create an account
               </button>
             </div>
