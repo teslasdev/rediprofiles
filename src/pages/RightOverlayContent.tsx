@@ -9,7 +9,7 @@ const RightOverlayContent = ({ isAnimated, setIsAnimated } : any) => {
         <div className="mt-16">
           <button
             className="py-3 px-6 bg-transparent rounded-full text-center text-white font-bold uppercase ring-2 ring-white active:scale-110 transition-transform ease-in"
-            onClick={(e : any) => {
+            onClick={() => {
               setIsAnimated(!isAnimated);
             }}
           >
