@@ -54,7 +54,7 @@ const Home = () => {
             <h2 className="md:text-[50px] text-[30px] font-[800] relative z-50">
               Take Control of Your Social Media
             </h2>
-            <p className="w-[400px] font-[400] mt-5 text-gray-600 text-[18px]">
+            <p className="md:w-[400px] font-[400] mt-5 text-gray-600 text-[18px]">
               Stay organized, save time, and easily manage your social media
               with monitoring, and team collaboration tools.
             </p>
